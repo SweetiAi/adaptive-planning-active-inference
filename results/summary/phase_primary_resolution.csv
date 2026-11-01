@@ -1,0 +1,6 @@
+phase,n_checkpoints,n_primary_resolved,fraction_checkpoints_primary_resolved,dataset_role,training_refresh,evaluation_replan
+E1,6,1,0.16666666666666666,screening,original_schedule,forced_fresh
+E2,6,0,0.0,screening,original_schedule,forced_fresh
+H1,6,3,0.5,screening,original_schedule,forced_fresh
+H2,6,5,0.8333333333333334,screening,original_schedule,forced_fresh
+H3,6,2,0.3333333333333333,screening,original_schedule,forced_fresh
