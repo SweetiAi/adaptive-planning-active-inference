@@ -146,6 +146,7 @@ adaptive-planning-active-inference/
 │   ├── figures/
 │   └── summary/
 ├── CITATION.md
+├── LICENSE
 ├── requirements.txt
 └── README.md
 ```
@@ -196,6 +197,6 @@ Whenever the mixed model, DPEFE, CL, Beta arbitration, or the original mutating-
 
 See [`CITATION.md`](CITATION.md) and [`docs/UPSTREAM_AND_SCOPE.md`](docs/UPSTREAM_AND_SCOPE.md) for the detailed attribution boundary.
 
-## Release note
+## License
 
-This repository is currently being prepared for public release. The screening results are deliberately presented with conservative interpretation and should not be read as confirmatory statistical evidence.
+The project-specific code and documentation in this companion repository are released under the **MIT License**. Upstream components remain subject to their own attribution and licensing terms.
