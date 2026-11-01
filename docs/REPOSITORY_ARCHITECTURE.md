@@ -4,13 +4,13 @@ This project deliberately uses **two repositories with different roles**.
 
 ## 1. Upstream fork: implementation and reproducibility
 
-Repository:
+Project fork:
 
-`SweetiAi/aimmppcl_2023`
+[`SweetiAi/aimmppcl_2023`](https://github.com/SweetiAi/aimmppcl_2023)
 
-This repository is an official GitHub fork of:
+This repository is a GitHub fork created for this project from:
 
-`aswinpaul/aimmppcl_2023`
+[`aswinpaul/aimmppcl_2023`](https://github.com/aswinpaul/aimmppcl_2023)
 
 The upstream repository implements the mixed Active Inference model introduced by:
 
@@ -27,13 +27,13 @@ The upstream model provides the original:
 
 These are upstream contributions and are not claimed as original contributions of the adaptive-planning project.
 
-The fork is retained as the **execution environment** for experiments that require the original model. Project-specific experimental code should live on a dedicated branch rather than modifying the preserved upstream `main` branch.
+The project fork is retained as the **execution environment** for experiments that require the original model. Project-specific experimental code should live on a dedicated branch rather than modifying the preserved upstream-derived `main` branch.
 
 ## 2. Companion repository: research contribution and presentation
 
 Repository:
 
-`SweetiAi/adaptive-planning-active-inference`
+[`SweetiAi/adaptive-planning-active-inference`](https://github.com/SweetiAi/adaptive-planning-active-inference)
 
 This repository is the **companion research repository**. Its role is to present the scientific question, independent analyses, curated results, figures, methodological documentation, and the exact contribution boundary of the adaptive-planning extension.
 
@@ -69,7 +69,7 @@ Project-specific contributions include:
 
 To preserve provenance and avoid accidentally altering or obscuring the upstream model:
 
-1. The fork's `main` branch is treated as preserved upstream code.
+1. The fork's `main` branch is treated as preserved upstream-derived code.
 2. Adaptive-planning implementation work belongs on a dedicated project branch.
 3. No exploratory outputs, local checkpoints, virtual environments, raw Monte Carlo dumps, or personal filesystem paths should be committed.
 4. Files copied into the companion repository must be independently reviewed for provenance and dependency assumptions.
