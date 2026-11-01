@@ -4,7 +4,7 @@ A research extension of the mixed Active Inference architecture introduced by **
 
 > **When is additional predictive planning worth computing, and how deep should that planning be?**
 
-This repository is the **companion research repository** for the project. It contains the independent analysis code, curated screening results, figures, and methodological documentation. The original mixed-model implementation is kept in the upstream fork rather than copied wholesale here.
+This repository is the **companion research repository** for the project. It contains the independent analysis code, curated screening results, figures, and methodological documentation. The original mixed-model implementation is kept in a separate GitHub fork rather than copied wholesale here.
 
 ## Scientific basis
 
@@ -12,8 +12,8 @@ This work builds directly on:
 
 **Paul, A., Isomura, T., & Razi, A. (2024). _On Predictive Planning and Counterfactual Learning in Active Inference_. Entropy, 26(6), 484. https://doi.org/10.3390/e26060484**
 
-Original implementation: **`aswinpaul/aimmppcl_2023`**  
-Execution fork used for this project: **`SweetiAi/aimmppcl_2023`**
+Original implementation: **[`aswinpaul/aimmppcl_2023`](https://github.com/aswinpaul/aimmppcl_2023)**  
+Project fork used for execution: **[`SweetiAi/aimmppcl_2023`](https://github.com/SweetiAi/aimmppcl_2023)**
 
 Paul et al. introduced the upstream ingredients used here, including:
 
@@ -92,7 +92,7 @@ This is a central limitation of the screening study and is why the results are n
 
 ### 4. Same-maze early vs late comparison suggests context dependence beyond geometry alone
 
-`H1` and `H3` use the same hard maze but occur at different stages of learning. Their descriptive differences indicate that planning-depth sensitivity changes across learning context even when maze geometry is held fixed.
+`H1` and `H3` use the same hard maze but occur at different stages of learning. Their descriptive differences are consistent with planning-depth sensitivity changing across learning context even when maze geometry is held fixed.
 
 ![Early-hard versus late-hard screening comparison](results/figures/H1_vs_H3_screening.png)
 
@@ -121,7 +121,7 @@ The current screening evidence supports:
 - planning depth can materially alter the DPEFE policy,
 - deeper planning can improve behaviour in some hard-regime conditions,
 - the value of deeper planning varies across learning regimes,
-- same-maze early/late differences argue against a purely geometric explanation.
+- same-maze early/late differences are not attributable to maze geometry alone, although they remain descriptive screening evidence.
 
 The current study does **not** establish:
 
@@ -168,9 +168,9 @@ Methodology, provenance, and the exact boundary between the Paul et al. upstream
 
 ## Reproducibility and execution model
 
-The companion repository contains independent analysis code and curated outputs. Experiments requiring the original mixed-model agent were executed against the official GitHub fork:
+The companion repository contains independent analysis code and curated outputs. Experiments requiring the original mixed-model agent were executed against the project GitHub fork:
 
-**`SweetiAi/aimmppcl_2023`**, forked from **`aswinpaul/aimmppcl_2023`**.
+**[`SweetiAi/aimmppcl_2023`](https://github.com/SweetiAi/aimmppcl_2023)**, forked from **[`aswinpaul/aimmppcl_2023`](https://github.com/aswinpaul/aimmppcl_2023)**.
 
 The fork preserves upstream provenance and is the appropriate place for implementation-level reproduction of the original Paul et al. model plus project-specific experiment branches.
 
